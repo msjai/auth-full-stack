@@ -1,0 +1,4 @@
+.idea/
+account/.env.dev
+*.pem
+account/gda-service-account-google.json
