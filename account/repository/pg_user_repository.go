@@ -73,7 +73,9 @@ func (r *pGUserRepository) FindByEmail(ctx context.Context, email string) (*mode
 func (r *pGUserRepository) Update(ctx context.Context, u *model.User) error {
 	query := `
 		UPDATE users 
-		SET name=:name, email=:email, website=:website
+		SET name=:name, email=:email, website=:website, firstname=:firstname, 
+		    lastname=:lastname, telegram=:telegram, phonenumber=:phonenumber,
+		    country=:country, city=:city, location=:location, lang=:lang
 		WHERE uid=:uid
 		RETURNING *;
 	`
