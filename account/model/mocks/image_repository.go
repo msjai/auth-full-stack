@@ -12,6 +12,8 @@ type MockImageRepository struct {
 	mock.Mock
 }
 
+type MyType struct{}
+
 // DeleteProfile is mock of representations of ImageRepository DeleteProfile
 func (m *MockImageRepository) DeleteProfile(ctx context.Context, objName string) error {
 	ret := m.Called(ctx, objName)

@@ -2,7 +2,7 @@ FROM golang:alpine as builder
 
 WORKDIR /go/src/app
 
-ENV GO111MODULE=on
+ENV GO111MODULE=auto
 
 RUN go install github.com/cespare/reflex@latest
 
@@ -20,7 +20,7 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 
 #Copy executable from builder
-COPY --from=builder /go/src/app/run .
+COPY --from=builder /go/src/app/ .
 
 EXPOSE 8080
 CMD ["./run"]

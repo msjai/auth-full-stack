@@ -1,10 +1,19 @@
 {
   "folders": [
     {
-      "path": "./account"
+      "name": "account",
+      "path": "account"
     },
     {
+      "name": "account-client",
+      "path": "account-client"
+    },
+    {
+      "name": "auth-full-stack",
       "path": "."
     }
-  ]
+  ],
+  "settings": {
+    "css.validate": false
+  }
 }

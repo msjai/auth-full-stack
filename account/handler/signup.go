@@ -1,11 +1,13 @@
 package handler
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/msjai/auth-full-stack/account/model"
-	"github.com/msjai/auth-full-stack/account/model/apperrors"
 	"log"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
+
+	"github.com/msjai/auth-full-stack/account/model"
+	"github.com/msjai/auth-full-stack/account/model/apperrors"
 )
 
 // signupReq is not exported, hence the lowercase name
